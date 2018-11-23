@@ -73,7 +73,7 @@ Escalante Maron, Nelia 		\hfill	(2014049551) \\
 Salamanca Contreras, Fiorella Rosmery		\hfill	(2015053237) \\
 Condori Gutierrez, Flor de Maria            	\hfill	(2015053227) \\
 Coaquira Calizaya, Yerson      	\hfill	(2015053225) \\
-Espinoza Caso, Lizbeth  		\hfill	(2011040667) \\
+Espinoza Caso, Lisbeth  		\hfill	(2011040667) \\
 \end{flushleft}
 \end{large}
 \end{center}
@@ -417,9 +417,124 @@ para el manejo y administracion de la base de datos.
 \begin{center}
 \includegraphics[width=15cm]{./IMG/img15}
 \end{center}
+
 Posteriormente selecciona la solapa del men\'u contextual de la parte superior de la
 pantalla denominado SQL Workshop, acontinuacion Object Browser. Finalmente
-se vizualiza una pantalla que te indica en 
+se vizualiza una pantalla que te indica en la parte lateral derecha de la patalla que
+tipos de objetos puedes crear, p.e tablas (entidades), vistas, procesos, funciones,
+por mencionar algunas.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img16}
+\end{center}
+Selecciona el tipo de objeto y da clic en el boton create. Para este
+caso selecciona Table, una vez hecha esta seleccion podras ingresar los campos
+o atributos a la entidad, es decir asignar las columnas de la tabla, para ello es
+necesario hacer uso del diccionario de datatos creado durante el diseno conceptual
+y logico de la base de datos. 
 
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img17}
+\end{center}
+Seleccionar la clave primaria y Next. 
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img18}
+\end{center}
+Para este caso no existir\'a ninguna clave for\'anea y por lo tanto damos en
+siguiente. Para las restricciones, no se hace nada y finalmente damos en create
+para crear nuestra tabla. 
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img19}
+\end{center}
+Confirmacion de los datos con sentencias SQL de la tabla
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img20}
+\end{center}
+Finalmente se puede visualizar la entidad Materia, aunado a esto podras observar
+un men\'u contextual que te permite crear y administrar la entidad. 
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img21}
+\end{center}
+
+Actividad extraclase: Ahora procede a crear las tablas: Tel\'efono,
+MAT ANTERIOR, PROF PROFESION, PROFESION, EQUIVALENCIA, AULA,
+GRUPO, HORARIO Y APRECIACION. Una vez terminado de crear las doce
+tablas tendras la siguiente vista: 
+
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img22}
+\end{center}
+
+
+\newpage
+
+ 
+\section{Solaris / Centos /BSD}
+\subsection{Instalacion}
+Antes de instalar cualquier SGBD es necesario conocer los requerimientos de hardware y software, el posible software a desinstalar previamente, verificar el registro de Windows y el entorno del sistema, así como otras caracteristicas de configuracion especializadas como pueden ser la reconfiguracion de los servicios TCP/IP y la modificacion de los tipos archivos HTML para los diversos navegadores.
+Se presenta a continuacion una serie de requerimientos minimos de hardware y software para instalar Oracle Express 11g y MySQL estandar version 5.1. en y Ubuntu 14.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img23}
+\end{center}
+\subsubsection{Proceso de instalacion}
+Descarga el software apropiado a tu haradwawre y sistema operativo aqui\\
+Descomprime el archivo descargado y ejecuta el archivo setup.exe (caso windows) con privilegios de administrador\\
+Pulse sobre el boton de siguiente para iniciar la instalacion.\\
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img24}
+\end{center}
+Acepte los terminos de acuerdo de licencia
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img25}
+\end{center}
+Verifique los requerimientos de espacio y si los cumple pulse aceptar. Considere un Giga m\'as para almacenamiento.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img26}
+\end{center}
+Introduzca el password para el usuario SYSTEM. Despues de terminar la instalacion debera iniciar la base de datos con este usuario.
+
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img27}
+\end{center}
+A continuacion Oracle Database XE nos informa sobre los puertos que utilizara. Pulse Instalar.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img28}
+\end{center}
+El tiempo de instalacion de Oracle Database XE depende de su equipo (procesador y memoria). Al terminar el proceso de instalacion pulse el boton Terminar.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img29}
+\end{center}
+
+\subsection{Configuraci\'on}
+
+Al pulsar el boton Terminar nos direccionara a la pagina de acceso de la base de datos (http://127.0.0.1:8080/apex). Recuerde iniciar por primera vez con el usuario SYSTEM y su password.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img30}
+\end{center}
+Pulse el icono Sessions e introduzca la siguiente informacion
+
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img31}
+\end{center}
+Para futuros accesos usted puede pulsar boton de inicio, todos los programas, base de datos 11g Express Edition o el icono en su escritorio denominado Base de Datos.
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img32}
+\end{center}
+Ahora vamos a crear un usuario
+\begin{center}
+\includegraphics[width=6cm]{./IMG/img33}
+\end{center}
+llenar todo el formulario
+\begin{center}
+\includegraphics[width=15cm]{./IMG/img34}
+\end{center}
+
+
+\section{WEBGRAFIA } 
+
+- http://ri.uaemex.mx/bitstream/handle/20.500.11799/31602/secme-15942.pdf?sequence=1\\
+- http://www.prograweb.com.mx/tallerBD/0101InstalarSGBD.php\\
+- http://www.oracle.com/technetwork/es/articles/linux/simplificar-instalar-oracle-linux-6-2251315-esa.html\\
+- http://cristianpastaz.blogspot.com/p/objetivos.html\\
+- https://academy.oracle.com/es/solutions-database.html
 
 \end{document}
