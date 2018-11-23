@@ -1,0 +1,181 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx} % figuras
+\usepackage{subfigure} % subfiguras
+\usepackage{float} % para usar [H]
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{stackrel} 
+\usepackage[latin1]{inputenc}
+\usepackage{multirow}
+\usepackage{enumerate} % enumerados
+\renewcommand{\labelitemi}{$-$}
+\renewcommand{\labelitemii}{$\cdot$}
+\author{Nelia Escalante}
+\title{Caratula}
+\begin{document}
+
+
+\author{Nelia Escalante}
+\title{Caratula}
+
+\begin{titlepage}
+\begin{center}
+\large{UNIVERSIDAD PRIVADA DE TACNA}\\
+\vspace*{-0.025in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./IMG/logo}
+\end{center}
+\end{figure}
+\vspace*{0.15in}
+INGENIERIA DE SISTEMAS  \\
+
+\vspace*{0.5in}
+\begin{large}
+TITULO:\\
+\end{large}
+
+\vspace*{0.1in}
+\begin{Large}
+\textbf{Instalacion de Base de Datos Oracle} \\
+\end{Large}
+
+\vspace*{0.3in}
+\begin{Large}
+\textbf{CURSO:} \\
+\end{Large}
+
+\vspace*{0.1in}
+\begin{large}
+BASE DE DATOS II\\
+\end{large}
+
+\vspace*{0.3in}
+\begin{Large}
+\textbf{DOCENTE:} \\
+\end{Large}
+
+\vspace*{0.1in}
+\begin{large}
+ Ing. Patrick Cuadros Quiroga\\
+\end{large}
+
+\vspace*{0.2in}
+\vspace*{0.1in}
+\begin{large}
+Integrantes: \\
+\begin{flushleft}
+Escalante Maron, Nelia 		\hfill	(2014049551) \\
+Salamanca Contreras, Fiorella Rosmery		\hfill	(2015053237) \\
+Condori Gutierrez, Flor de Maria            	\hfill	(2015053227) \\
+Coaquira Calizaya, Yerson      	\hfill	(2015053225) \\
+Espinoza Caso, Lizbeth  		\hfill	(2011040667) \\
+\end{flushleft}
+\end{large}
+\end{center}
+
+\end{titlepage}
+
+
+ \tableofcontents
+ \newpage
+
+ 
+\section{Introducci\'on} 
+En la actual economia impulsada por datos, ningun plan de estudios en ciencias de la computacion o administracion de empresas estaría completo sin un curso sobre bases de datos y administracion de datos. Para poder entender como utilizar los datos que tenemos y encontrar mejores y más innovadoras maneras de administrarlos y utilizarlos, es esencial que entendamos la manera en que las computadoras organizan, utilizan y procesan los datos.
+
+Durante más de 40 aos, Oracle ha estado ayudando a empresas, gobiernos y organizaciones a recopilar, organizar, administrar y utilizar sus datos para mejorar no solo sus negocios, sino también el mundo. 
+Oracle la primera Base de Datos Disenada para Grid Computing. es un sistema de gestion de  base de datos relacional fabricado por Oracle Corporation.
+
+Oracle es basicamente una harramienta Cliente/Servidor para la gestion de base de datos la gran potencia que tiene y su elevado precio hace que solo se vea en empresas muy grandes y multinacionales, por norma general. \\
+Oracle Corporation: Es una de las mayores companias de software del mundo.Sus producto van desde bases de datos (Oracle) hasta sistemas de gestion, cuanta ademas con herramientas propias de desarrollo para realizar potentes aplicaciones, como Oracle. 
+\begin{center}
+\includegraphics[width=15cm]{IMG/img001.png} 
+\end{center}
+
+ \newpage
+\section{Objetivos} 
+- Realizar la instalacion,  del gestor de base de datos Oracle.
+
+- Especificar las diferentes aplicaciones dentro del lugar de trabajo.
+
+- Determinar los usuarios relacionados para el intercambio de informacion por medio de las aplicaciones de comunicacion.
+
+- Conocer el adecuado funcionamiento de almacenamiento y transmision de datos que permiten ciertas aplicaciones.
+\newpage
+\section{Oracle Linux modo Terminal (Consola)}
+\subsection{Instalacion}
+Para poder realizar la instalacion de la base de datos  debemos de tener  el Sistema operativo Oracle Linux. \\
+\\Una vez obtenida el Sistema Operativo:\\ 
+\\
+- Iniciaremos sesion en Oracle Linux. \\
+- Usuario OracleServidor  \\
+\begin{center}
+\includegraphics[width=11cm]{IMG/oracle1.png} 
+\end{center}
+- Ingresamos la contrasena \\
+\begin{center}
+\includegraphics[width=11cm]{IMG/oracle2.png} 
+\end{center}
+- Enseguida abriremos el terminal en oracle, damos clic derecho y escogemos la opcion de "Abrir Terminal" \\
+
+\begin{center}
+\includegraphics[width=12cm]{IMG/oracle3.png} 
+\end{center}
+
+Paso 1: Una vez iniciado sesion con el usuario root abrimos una terminal ejecutamos el comando, lo que va hacer este comando es instalar repositorios que son necesarios para la instalacion de oracle database, veremos que se instalaran con ayuda del internet, esperamos a que se instale, esta accion lo realizamos con el comando. 
+\begin{center}
+\includegraphics[width=8cm]{./oraclelinux/Comando.png}
+\includegraphics[width=15cm]{./oraclelinux/1.png}
+\includegraphics[width=15cm]{./oraclelinux/2.png}
+\includegraphics[width=15cm]{./oraclelinux/3.png}
+\end{center}
+
+Paso 2 : Una vez instalada todos los repositorios faltantes Creamos la carpeta donde se instalara los db de oracle
+
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/4.png}
+\end{center}
+Paso 3 : Montamos un usb con el instalador en este caso tenemos el instaldor en dos partes en archivos zip,una vez montado el usb copiamos los archivos a la carpeta creada anteriormente /home/OraDB11g.
+
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/5.png}
+\includegraphics[width=15cm]{./oraclelinux/6.png}
+\end{center}
+
+Paso 4 : Una vez copiado los archivos nos dirigimos a la carpeta /home/OraDB11g  para extraer el instalador
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/7.png}
+\end{center}
+Paso 5 : Una vez extraida se creara un carpeta database.
+
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/8.png}
+\end{center}
+Paso 6 : Ahora para ejecutar el runInstaller debemos iniciar sesion con el usuario oracle para eso de asiganamos una contrasena con el comando passwd.
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/9.png}
+\end{center}
+
+Paso 7 : Luego iniciamos sesion y nos dirimos a la carpeta donde se encuentra el instalador y ejecutamos runInstaller.
+
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/10.png}
+\includegraphics[width=15cm]{./oraclelinux/11.png}\\
+Proporcionamos una direccion de correo electronico para recibir informacion sobre los problemas de seguridad.\\
+\includegraphics[width=15cm]{./oraclelinux/12.png}\\
+Seleccionamos cualquiera de las opciones.\\
+\includegraphics[width=15cm]{./oraclelinux/13.png}\\
+Seleccionamos el tipo de instalacion de base de datos.\\
+\includegraphics[width=15cm]{./oraclelinux/14.png}\\
+Seleccionamos los idiomas en que se ejecutara el producto.\\
+\includegraphics[width=15cm]{./oraclelinux/15.png}\\
+Seleccionamos la edicion de base de datos que deseamos instalar.\\
+\end{center}
+
+
+\end{document}
